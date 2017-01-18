@@ -28,11 +28,11 @@ Encrypt and decrypt your password(or other text as you want) with javascript .  
 
 这样，就可以只记住一个密钥，而在注册不同网站时使用不同的密码,防止撞库攻击。
 
-网站1 UVWP  ->  1234
+网站1 UVWP  ^  abcd  -> 1234
 
-网站2 QRS\  ->  5678
+网站2 QRS\  ^  abcd  -> 5678
 
-网站3 ]TUV  ->  9012
+网站3 ]TUV   ^  abcd  -> 9012
 
 以上的网站地址和密文密码可以存储和传输，不怕泄露，而需要明文时只在本地浏览器上解密，不对外传输。这也是为什么用javascript加解密，而不是php之类的原因。
 
